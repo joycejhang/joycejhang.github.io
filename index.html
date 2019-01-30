@@ -1,22 +1,32 @@
 <!DOCTYPE HTML>
-<head> 
-  <style type="text/css"> 
-    div { 
-      background-color:#FF0000; 
-    } 
-  </style> 
-</head>
 <html>
+<head> 
+  #redblock { 
+  z-index: 1; 
+  position: 
+  absolute; 
+  width:80px; 
+  height:100px; 
+  top:20px; 
+  left:20px; 
+  border: 1px solid #FFF; 
+  background-color: #FF0000; 
+} 
+
+#pinkblock { 
+  z-index: 2; 
+  position: absolute; 
+  width:100px; 
+  height:80px; 
+  top:50px; 
+  left:50px; 
+  border: 1px solid #FFF; 
+  background-color: #FF00FF; 
+}
+</head>
+
 <body>
-<div> 
-    背景顏色是紅色 
-</div> 
-<div><h1>Hello Github Pages</h1></div>
-<p>We are almost done</p>
-<a href="http://joycejhang.github.io/softneed.html">softneed</a>
-<p></p>
-<img src="../soft-binding-th.jpg"width="200" height="100">
-<p></p>
-<img src="../jpg/book.jpg"width="200" height="100">
+<div id="redblock"></div> 
+<div id="pinkblock"></div>
 </body>
 </html>
