@@ -4,6 +4,13 @@
 <meta charset="utf-8">
 <title>Joyce's Blog</title>
 <style type="text/css">
+#container { 
+  margin-top:1px; 
+  margin-left:20%; 
+  margin-right:20%; 
+  margin-bottom:auto; 
+  border: 1px solid 000000; 
+  }
 table { 
   border: 5; 
   font-family: arial; 
@@ -15,17 +22,30 @@ td {
    border-bottom:1 solid #FFFFFF; 
    color:#FFFFFF;
 } 
-#container { 
-margin-top:1px; 
-margin-left:20%; 
-margin-right:20%; 
-margin-bottom:auto; 
-border: 1px solid 000000; 
-}
+mark {
+  font-family: arial;
+  font-size:60px;
+  font-family: impact;
+  }
+complement {
+  font-family: arial;
+  font-size:30px;
+  font-style: italic;
+  }
 ul { 
+  font-size:25px;
   list-style-type:circle;
-  list-style-image:url("circle.gif"); 
-}
+  }
+h1 {
+  font-family: arial;
+  font-size:25px;
+  font-style: italic;
+  }
+h2 {
+  font-family: arial;
+  font-size:20px;
+  }
+  
 </style>
 </head>
 
@@ -34,14 +54,14 @@ ul {
   <table>
     <tr>
       <td ><img src="../jpg/buleconnet2.jpg" width="200" height="200"</td>
-      <td><p style="font-size:60px;font-family: impact;">Joyce's Blog</p>
-          <p style="font-size:30px;font-style: italic">About Machine Learning Notes</p></td>
+      <td><mark>&nbsp;&nbsp;Joyce's Blog</mark><br>
+          <complement>&nbsp;&nbsp;About Machine Learning Notes</complement></td>
     </tr>
     <tr>
       <td colspan="2">
         <ul>
-          <li>ABOUT Machine Learning NOTES<br>123
-          <li>456
+          <li><h1>ABOUT Machine Learning NOTES</h1><br><h2>123</h2>
+          <li><h1>456</h1>
         </ul></td>
     </tr>
   </table>
