@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<head> 
+  <style type="text/css"> 
+    div { 
+      background-color:#FF0000; 
+    } 
+  </style> 
+</head>
+<html>
+<body>
+<div> 
+    背景顏色是紅色 
+</div> 
+<div><h1>Hello Github Pages</h1></div>
+<p>We are almost done</p>
+<a href="http://joycejhang.github.io/softneed.html">softneed</a>
+<p></p>
+<img src="../soft-binding-th.jpg"width="200" height="100">
+<p></p>
+<img src="../jpg/book.jpg"width="200" height="100">
+</body>
+</html>
