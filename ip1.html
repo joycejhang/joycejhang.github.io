@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>Joyce's Blog</title>
+  
+<STYLE TYPE="text/css"> 
+  @import url(style.css);  
+</STYLE>
+
+</head>
+
+<body BGCOLOR="#000000">
+<div id="container"> 
+<img style="float: left;" src="../jpg/buleconnet2.jpg" width="200" height="200"/><br><br> 
+<topmark>&nbsp;&nbsp;Joyce's Blog</topmark><br>
+<complement>&nbsp;&nbsp;About Machine Learning Notes</complement>
+<br>
+<br>  
+<br>
+<h4><a href="http://joycejhang.github.io/">HOME</a> > 
+    <a href="http://joycejhang.github.io/implementation_project.html">Implementation Project About LSTM RNN</a> >
+    Closed economy model
+</h4>
+<h4>Model assumption:Y=WX+B</h4>
+<h4>Predicted model:hat_y=hat_wX+hat_b</h4>
+<h4>Good model : Min lim[(hat_y-Y)/N]-->0 </h4>
+<h4>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close</h4>
+<h4>Output label Y:next_day_High
+<h4>Long Short-Term Memory cell (LSTM) = 2 layers</h4>
+<h4>Neurons = 10 unit<h4>
+<ul>
+  <li><h1>參數設定與載入資料</h1>
+      <h3>參數設定與載入資料定</h3>
+  <li><h1>訓練和測試的資料處理</h1>
+      <h3>訓練和測試的資料處理</h3>
+  <li><h1>LSTM RNN</h1>
+      <h3>LSTM RNN</h3>
+  <li><h1>訓練模型</h1>
+      <h3>訓練模型</h3>
+      <h3>結果:Loss maxnum= 1.0755538 Loss minmun= 0.0042605232</h3>
+      <h3><img style="float: left;" src="../jpg/train_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="800" height="400"/></h3>
+  <li><h1>驗證模型</h1>
+      <h3>驗證模型</h3>
+      <h3>結果:The deviation of this predict: 0.007317952136999591</h3>
+      <h3><img style="float: left;" src="../jpg/test_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="800" height="400"/></h3>     
+</ul>  
+</div>
+</body>
+</html>
