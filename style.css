@@ -25,7 +25,7 @@ complement {
   font-family: arial;
   font-size:30px;
   font-style: italic;
-  color:#CCCCFF;
+  color:#F8F8FF;
   }
 ul {
   font-size:40px;
@@ -41,7 +41,7 @@ h1 {
 h2 {
   font-family: monospace,DFKai-SB;
   font-size:30px;
-  color:#FFFF00;
+  color:#0066FF;
   } 
 h3 {
   font-family: DFKai-SB,arial;
@@ -51,8 +51,13 @@ h3 {
 h4 {
   font-family: DFKai-SB,arial;
   font-size:20px;
-  color:#0066FF;
+  color:#FFFFFF;
   } 
+h5 {
+  font-family: DFKai-SB,arial;
+  font-size:15px;
+  color:#0066FF;
+  }
 a:link {color:#FFFF00; text-decoration:none;} 
 a:visited {color:#FFFF00; text-decoration:none;} 
 a:hover {font-size:20; color:#0066FF; text-decoration:underline;} 
