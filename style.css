@@ -56,6 +56,11 @@ h4 {
 h5 {
   font-family: DFKai-SB,arial;
   font-size:15px;
+  color:#FFFFFF;
+  }
+h6 {
+  font-family: DFKai-SB,arial;
+  font-size:15px;
   color:#0000FF;
   }
 a:link {color:#FFFF00;text-decoration:none;} 
