@@ -18,7 +18,7 @@ td {
 topmark {
   font-family: arial;
   font-size:60px;
-   color:#FFFFFF;
+  color:#FFFFFF;
   font-family: impact; 
   }
 complement {
@@ -32,16 +32,22 @@ ul {
   list-style-type:circle;
   }
 h1 {
-  font-family: arial;
+  font-family: arial,DFKai-SB;
   font-size:35px;
   font-weight: 400;
   color:#FFFF00;
   }
 h2 {
+  font-family: monospace,DFKai-SB;
+  font-size:30px;
+  color:#FFFFFF;
+  } 
+h3 {
   font-family: DFKai-SB,arial;
   font-size:25px;
-  }  
-h3 {
+  color:#FFFFFF;
+  }
+h4 {
   font-family: DFKai-SB,arial;
   font-size:20px;
   color:#0066FF;
