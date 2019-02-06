@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>Joyce's Blog</title>
+  
+<STYLE TYPE="text/css"> 
+  @import url(style.css);  
+</STYLE>
+
+</head>
+
+<body BGCOLOR="#000000">
+<div id="container"> 
+<img style="float: left;" src="../jpg/buleconnet2.jpg" width="200" height="200"/><br><br> 
+<topmark>&nbsp;&nbsp;Joyce's Blog</topmark><br>
+<complement>&nbsp;&nbsp;About Machine Learning Notes</complement>
+<br>
+<br>  
+<br>
+<h4><a href="http://joycejhang.github.io/">HOME</a> > 
+    <a href="http://joycejhang.github.io/ip.html">Implementation Project About LSTM RNN</a> >
+    Monetary Economy
+</h4>
+<h5>Model assumption:Y=WX+B</h5>
+<h5>Predicted model:hat_y=hat_wX+hat_b</h5>
+<h5>Good model : Min [(hat_y-Y)/N]-->0 </h5>
+<h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add rate and M1A、M1B、M2</h5>
+<h5>Output label Y:next_day_High</h5>
+<h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
+<h5>Neurons = 21 unit<h5>
+<ul>
+  <li><h2>Train model</h2>
+      <h5>訓練模型</h5>
+      <h5>結果Result:maxnum= 1.2233338 ; Loss minmun= 0.00209085</h5>
+      <h5><img src="../jpg/train_n21_u21_l2_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+  <li><h2>Test model</h2>
+      <h5>驗證模型</h5>
+      <h5>結果Result:The deviation of this predict: 0.05328915600824949</h5>
+      <h5><img src="../jpg/test_n21_u21_l2_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+  <li><h2>Conclusion結論:</h2>
+      <h4>加入貨幣總計數M1A、M1B、M2和利率...等，對台灣股票投資的影響，        
+        Features為17個，LSTM cell內的神經元從為17，loss值降低，但overfitting使偏差程度不小。
+      </h4>
+  <li><h2>調整:</h2>
+      <h4>Features為7個，LSTM cell內的神經元從為17，隱藏層為2，loss值增，但overfitting使偏差程度下降。</h4>
+      <h5>結果Result:maxnum= 0.08592842 ; Loss minmun= 0.0031158105</h5>
+      <h5><img src="../jpg/test_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+      <h5>驗證模型</h5>
+      <h5>結果Result:The deviation of this predict: 0.02503750932977871</h5>
+      <h5><img src="../jpg/train_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+</ul>  
+</div>
+</body>
+</html>
