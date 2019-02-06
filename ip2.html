@@ -28,16 +28,16 @@
 <h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add Japan's stock index and China's. </h5>
 <h5>Output label Y:next_day_High</h5>
 <h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
-<h5>Neurons = 20 unit<h5>
+<h5>Neurons = 16 unit<h5>
 <ul>
   <li><h2>Train model</h2>
       <h5>訓練模型</h5>
-      <h5>結果Result:Loss maxnum= 0.16187929 ; Loss minmun= 0.0008582358</h5>
-      <h5><img src="../jpg/train_n11_u20_l2_b60_s20_lr0005_i400_p5.png" width="600" height="300"/></h5>
+      <h5>結果Result:maxnum= 0.19225891 ; Loss minmun= 0.004171721</h5>
+      <h5><img src="../jpg/train_n8_u16_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
   <li><h2>Test model</h2>
       <h5>驗證模型</h5>
-      <h5>結果Result:The deviation of this predict: 0.01430383648887456</h5>
-      <h5><img src="../jpg/test_n11_u20_l2_b60_s20_lr0005_i400_p5.png" width="600" height="300"/></h5>
+      <h5>結果Result:The deviation of this predict: 0.011017222390028763</h5>
+      <h5><img src="../jpg/test_n8_u16_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
   <li><h2>Conclusion結論:</h2>
       <h4>加入日本和中國的重要股票加權指數，增加鄰近重要國家對台灣股票投資的影響，
         LSTM cell內的神經元從10增為20，
