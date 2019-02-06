@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>Joyce's Blog</title>
+  
+<STYLE TYPE="text/css"> 
+  @import url(style.css);  
+</STYLE>
+
+</head>
+
+<body BGCOLOR="#000000">
+<div id="container"> 
+<img style="float: left;" src="../jpg/buleconnet2.jpg" width="200" height="200"/><br><br> 
+<topmark>&nbsp;&nbsp;Joyce's Blog</topmark><br>
+<complement>&nbsp;&nbsp;About Machine Learning Notes</complement>
+<br>
+<br>  
+<br>
+<h4><a href="http://joycejhang.github.io/">HOME</a> > 
+    <a href="http://joycejhang.github.io/ip.html">Implementation Project About LSTM RNN</a> >
+    Small open economy mode
+</h4>
+<h5>Model assumption:Y=WX+B</h5>
+<h5>Predicted model:hat_y=hat_wX+hat_b</h5>
+<h5>Good model : Min [(hat_y-Y)/N]-->0 </h5>
+<h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add Japan's stock index and China's. </h5>
+<h5>Output label Y:next_day_High</h5>
+<h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
+<h5>Neurons = 16 unit<h5>
+<ul>
+  <li><h2>Train model</h2>
+      <h5>訓練模型</h5>
+      <h5>結果Result:maxnum= 0.19225891 ; Loss minmun= 0.004171721</h5>
+      <h5><img src="../jpg/train_n8_u16_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
+  <li><h2>Test model</h2>
+      <h5>驗證模型</h5>
+      <h5>結果Result:The deviation of this predict: 0.011017222390028763</h5>
+      <h5><img src="../jpg/test_n8_u16_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
+  <li><h2>Conclusion結論:</h2>
+      <h4>加入日本和中國的重要股票加權指數，增加鄰近重要國家對台灣股票投資的影響，        
+        Features從5個增為8個，LSTM cell內的神經元從10增為16，，loss和偏差程度皆增加了。
+      </h4>
+</ul>  
+</div>
+</body>
+</html>
