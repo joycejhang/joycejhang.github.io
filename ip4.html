@@ -28,19 +28,19 @@
 <h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add Countries's Market Exchange Rates</h5>
 <h5>Output label Y:next_day_High</h5>
 <h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
-<h5>Neurons = 46 unit<h5>
+<h5>Neurons = 21 unit<h5>
 <ul>
   <li><h2>Train model</h2>
       <h5>訓練模型</h5>
-      <h5>結果Result:maxnum= 0.17157614 ; Loss minmun= 0.0024848073</h5>
-      <h5><img src="../jpg/train_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h5>
+      <h5>結果Result:maxnum= 1.2233338 ; Loss minmun= 0.00209085</h5>
+      <h5><img src="../jpg/train_n21_u21_l2_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
   <li><h2>Test model</h2>
       <h5>驗證模型</h5>
-      <h5>結果Result:The deviation of this predict: 0.059620502279421596</h5>
-      <h5><img src="../jpg/test_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h5>
+      <h5>結果Result:The deviation of this predict: 0.05328915600824949</h5>
+      <h5><img src="../jpg/test_n21_u21_l2_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
   <li><h2>Conclusion結論:</h2>
       <h4>加入亞洲、歐洲和美洲...等國家的匯率，對台灣股票投資的影響，        
-        Features為23個，LSTM cell內的神經元從為46，，loss值降低，但overfitting使偏差程度反增加了。
+        Features為21個，LSTM cell內的神經元從為21，，loss值降低，但overfitting使偏差程度不小。
       </h4>
 </ul>  
 </div>
