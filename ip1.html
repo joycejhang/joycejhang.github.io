@@ -42,19 +42,19 @@
   <li><h2>Train model</h2>
       <h5>訓練模型</h5>
       <h5><img src="../jpg/LSTM4.png" width="700" height="500"/></h5>
-      <h5>結果Result:Loss maxnum= 1.0755538; Loss minmun= 0.0042605232</h5>
+      <h5>結果Result:Loss maxnum= 0.03219068 ; Loss minmun= 0.0040088445</h5>
       <h5><img src="../jpg/train_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
   <li><h2>Test model</h2>
       <h5>驗證模型</h53>
       <h5><img src="../jpg/LSTM5.png" width="700" height="600"/></h5>
-      <h5>結果Result:The deviation of this predict: 0.007317952136999591</h5>
+      <h5>結果Result:The deviation of this predict: 0.00837063765409333</h5>
       <h5><img src="../jpg/test_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
   <li><h2>Conclusion結論:</h2>
       <h4>此非真實封閉經濟模型Y=C+I+G,I並不含金融股票投資。
         利用各國股票加權指數(設計似封閉和開放經濟體系)，各國匯率和貨幣相關參數(貨幣市場)，建構關連與影響度，
         可再進一步依不同產業分析，建立似供應鏈的結構模型。</h4>
-      <h4>Learning rate=.0001讓loss曲線較平順的下降，但loss value應能再下降，但又擔心overfitting，training時以prob=.5降低overfitting問題。
-        模型驗證偏差程度=.00732仍不夠低。</h4>
+      <h4>Learning rate=.0001讓loss曲線較平順的下降，但loss value應能再下降，training時以prob=.5降低overfitting問題。
+        模型驗證偏差程度仍不夠低。</h4>
 </ul>  
 </div>
 </body>
