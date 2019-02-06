@@ -40,8 +40,15 @@
       <h5><img src="../jpg/test_n21_u21_l2_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
   <li><h2>Conclusion結論:</h2>
       <h4>加入亞洲、歐洲和美洲...等國家的匯率，對台灣股票投資的影響，        
-        Features為21個，LSTM cell內的神經元從為21，，loss值降低，但overfitting使偏差程度不小。
+        Features為21個，LSTM cell內的神經元從為21，loss值降低，但overfitting使偏差程度不小。
       </h4>
+  <li><h2>調整:</h2>
+      <h4>Features為21個，LSTM cell內的神經元從為20，隱藏層為3，loss值增，但overfitting使偏差程度下降。</h4>
+      <h5>結果Result:maxnum= 1.2233338 ; Loss minmun= 0.00209085</h5>
+      <h5><img src="../jpg/train_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+      <h5>驗證模型</h5>
+      <h5>結果Result:The deviation of this predict: 0.05328915600824949</h5>
+      <h5><img src="../jpg/test_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
 </ul>  
 </div>
 </body>
