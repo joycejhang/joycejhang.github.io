@@ -40,15 +40,12 @@
       <h5><img src="../jpg/test_n17_u17_l2_b80_s40_lr0001_i400_p5_r.png" width="600" height="300"/></h5>
   <li><h2>Conclusion結論:</h2>
       <h4>加入貨幣總計數M1A、M1B、M2和利率...等，對台灣股票投資的影響，        
-        Features為17個，LSTM cell內的神經元從為17，loss值降低，但overfitting使偏差程度不小。
+        Features為17個，LSTM cell內的神經元從為17，loss值與偏差程度跟預期的一樣不會太好，關於利率和貨幣總計數...等值並沒有收集到完整的數據。
       </h4>
-  <li><h2>調整:</h2>
-      <h4>Features為7個，LSTM cell內的神經元從為17，隱藏層為2，loss值增，但overfitting使偏差程度下降。</h4>
-      <h5>結果Result:maxnum= 0.08592842 ; Loss minmun= 0.0031158105</h5>
-      <h5><img src="../jpg/test_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
-      <h5>驗證模型</h5>
-      <h5>結果Result:The deviation of this predict: 0.02503750932977871</h5>
-      <h5><img src="../jpg/train_n21_u20_l3_b60_s20_lr0001_i400_p5_er.png" width="600" height="300"/></h5>
+      <h4>總資料量大約五千多筆而已，再分training data和test data，其實數據量真的太少，
+        但透過實做學習，可以更深刻的了解LSTM RNN的運作，參數調整對Model預測的影響，
+        對LSTM當參數或隱藏層神經元數量增加，易有overfitting的問題，近幾年有相關的論文研究，可再進一步了解。
+      </h4>
 </ul>  
 </div>
 </body>
