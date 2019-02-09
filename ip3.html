@@ -5,7 +5,7 @@
 <title>Joyce's Blog</title>
   
 <STYLE TYPE="text/css"> 
-  @import url(style.css);  
+  @import url(style2.css);  
 </STYLE>
 
 </head>
@@ -18,30 +18,30 @@
 <br>
 <br>  
 <br>
-<h4><a href="http://joycejhang.github.io/">HOME</a> > 
-    <a href="http://joycejhang.github.io/ip.html">Implementation Project About LSTM RNN</a> >
+<h3><a href="http://joycejhang.github.io/">HOME</a> > 
+    <a href="http://joycejhang.github.io/ip.html">Implementation of a RNN with LSTM cells</a> >
     Open economy model
-</h4>
-<h5>Model assumption:Y=WX+B</h5>
-<h5>Predicted model:hat_y=hat_wX+hat_b</h5>
-<h5>Good model : Min [(hat_y-Y)/N]-->0 </h5>
-<h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add Countries's stock index</h5>
-<h5>Output label Y:next_day_High</h5>
-<h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
-<h5>Neurons = 40 unit<h5>
+</h3>
+<h2>Model assumption:Y=WX+B</h2>
+<h2>Predicted model:hat_y=hat_wX+hat_b</h2>
+<h2>Good model : Min [(hat_y-Y)/N]-->0 </h2>
+<h2>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close,add Countries's stock index</h2>
+<h2>Output label Y:next_day_High</h2>
+<h2>Long Short-Term Memory cell (LSTM) = 2 layers</h2>
+<h2>Neurons = 40 unit<h2>
 <ul>
-  <li><h2>Train model</h2>
-      <h5>訓練模型</h5>
-      <h5>結果Result:maxnum= 0.23616102 ; Loss minmun= 0.0024677394</h5>
-      <h5><img src="../jpg/train_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h5>
-  <li><h2>Test model</h2>
-      <h5>驗證模型</h5>
-      <h5>結果Result:The deviation of this predict: 0.021472024183719053</h5>
-      <h5><img src="../jpg/test_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h5>
-  <li><h2>Conclusion結論:</h2>
-      <h4>加入亞洲、歐洲和美洲...等國家的重要股票加權指數，對台灣股票投資的影響，        
-        Features從8個增為20個，LSTM cell內的神經元從16增為40，，loss值降低，但overfitting使偏差程度反增加了。
-      </h4>
+  <li><h1>Train model</h1>
+      <h2>訓練模型</h2>
+      <h2>結果Result:maxnum= 0.23616102 ; Loss minmun= 0.0024677394</h2>
+      <h2><img src="../jpg/train_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h2>
+  <li><h1>Test model</h1>
+      <h2>驗證模型</h2>
+      <h2>結果Result:The deviation of this predict: 0.021472024183719053</h2>
+      <h2><img src="../jpg/test_n20_u40_l2_b60_s20_lr0001_i400_p5.png" width="600" height="300"/></h2>
+  <li><h1>Conclusion結論:</h1>
+      <h2>加入亞洲、歐洲和美洲...等國家的重要股票加權指數，對台灣股票投資的影響，        
+        Features從8個增為20個，LSTM cell內的神經元從16增為40，loss值降低，但overfitting使偏差程度反增加了。
+      </h2>
 </ul>  
 </div>
 </body>
