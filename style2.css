@@ -32,41 +32,20 @@ ul {
   list-style-type:circle;
   color:#FFFF00;
   }
-uli {
-  font-size:30px;
-  list-style-type:circle;
-  color:#00BBFF;
-  }
 h1 {
   font-family: monospace,DFKai-SB;
-  font-size:30px;
-  font-weight: 400;
-  color:#FFFF00;
+  font-size:25px;
+  color:#00BBFF;
   }
 h2 {
   font-family: monospace,DFKai-SB;
-  font-size:25px;
-  color:#00BBFF;
+  font-size:20px;
+  color:#FFFFFF;
   } 
 h3 {
   font-family: DFKai-SB,arial;
-  font-size:25px;
-  color:#FFFFFF;
-  }
-h4 {
-  font-family: DFKai-SB,arial;
   font-size:20px;
-  color:#F8F8FF;
-  } 
-h5 {
-  font-family: DFKai-SB,arial;
-  font-size:15px;
   color:#FFFFFF;
-  }
-h6 {
-  font-family: DFKai-SB,arial;
-  font-size:15px;
-  color:#0000FF;
   }
 a:link {color:#FFFF00;text-decoration:none;} 
 a:visited {color:#FFFF00; text-decoration:none;} 
