@@ -18,43 +18,44 @@
 <br>
 <br>  
 <br>
-<h4><a href="http://joycejhang.github.io/">HOME</a> > 
-    <a href="http://joycejhang.github.io/ip.html">Implementation Project About LSTM RNN</a> >
+<br>
+<h3><a href="http://joycejhang.github.io/">HOME</a> > 
+    <a href="http://joycejhang.github.io/ip.html">Implementation of a RNN with LSTM cells</a> >
     Closed economy model
-</h4>
-<h5>Model assumption:Y=WX+B</h5>
-<h5>Predicted model:hat_y=hat_wX+hat_b</h5>
-<h5>Good model : Min [(hat_y-Y)/N]-->0 </h5>
-<h5>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close</h5>
-<h5>Output label Y:next_day_High</h5>
-<h5>Long Short-Term Memory cell (LSTM) = 2 layers</h5>
-<h5>Neurons = 10 unit<h5>
+</h3>
+<h2>Model assumption:Y=WX+B</h2>
+<h2>Predicted model:hat_y=hat_wX+hat_b</h2>
+<h2>Good model : Min [(hat_y-Y)/N]-->0 </h2>
+<h2>Input features X:tw_Open,tw_High,tw_Low,tw_Close,tw_Adj_Close</h2>
+<h2>Output label Y:next_day_High</h2>
+<h2>Long Short-Term Memory cell (LSTM) = 2 layers</h2>
+<h2>Neurons = 10 unit<h2>
 <ul>
-  <li><h2>Set parameter and load data</h2>
-      <h5>參數設定與載入資料定</h5>
-      <h5><img src="../jpg/LSTM1.png" width="400" height="500"/></h5>
-  <li><h2>Train and test data</h2>
-      <h5>訓練和測試的資料處理</h5>
-      <h5><img src="../jpg/LSTM2.png" width="700" height="600"/></h5>
-  <li><h2>LSTM RNN</h2>
-      <h5>LSTM RNN</h5>
-      <h5><img src="../jpg/LSTM3.png" width="700" height="700"/></h5>
-  <li><h2>Train model</h2>
-      <h5>訓練模型</h5>
-      <h5><img src="../jpg/LSTM4.png" width="700" height="500"/></h5>
-      <h5>結果Result:Loss maxnum= 0.03219068 ; Loss minmun= 0.0040088445</h5>
-      <h5><img src="../jpg/train_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
-  <li><h2>Test model</h2>
-      <h5>驗證模型</h53>
-      <h5><img src="../jpg/LSTM5.png" width="700" height="600"/></h5>
-      <h5>結果Result:The deviation of this predict: 0.00837063765409333</h5>
-      <h5><img src="../jpg/test_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h5>
-  <li><h2>Conclusion結論:</h2>
-      <h4>此非真實封閉經濟模型Y=C+I+G,I並不含金融股票投資。
+  <li><h1>Set parameter and load data</h1>
+      <h2>參數設定與載入資料定</h2>
+      <h2><img src="../jpg/LSTM1.png" width="400" height="500"/></h2>
+  <li><h1>Train and test data</h1>
+      <h2>訓練和測試的資料處理</h2>
+      <h2><img src="../jpg/LSTM2.png" width="700" height="600"/></h2>
+  <li><h1>LSTM RNN</h1>
+      <h2>LSTM RNN</h2>
+      <h2><img src="../jpg/LSTM3.png" width="700" height="700"/></h2>
+  <li><h1>Train model</h1>
+      <h2>訓練模型</h2>
+      <h2><img src="../jpg/LSTM4.png" width="700" height="500"/></h2>
+      <h2>結果Result:Loss maxnum= 0.03219068 ; Loss minmun= 0.0040088445</h2>
+      <h2><img src="../jpg/train_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h2>
+  <li><h1>Test model</h1>
+      <h2>驗證模型</h2>
+      <h2><img src="../jpg/LSTM5.png" width="700" height="600"/></h2>
+      <h2>結果Result:The deviation of this predict: 0.00837063765409333</h2>
+      <h2><img src="../jpg/test_n5_u10_l2_b60_s20_lr0001_i200_p5.png" width="600" height="300"/></h2>
+  <li><h1>Conclusion結論:</h1>
+      <h2>此非真實封閉經濟模型Y=C+I+G,I並不含金融股票投資。
         利用各國股票加權指數(設計似封閉和開放經濟體系)，各國匯率和貨幣相關參數(貨幣市場)，建構關連與影響度，
-        可再進一步依不同產業分析，建立似供應鏈的結構模型。</h4>
-      <h4>Learning rate小讓loss曲線較平順的下降，但training較緩慢，loss值應該可以在下降，training時設dropout=.5降低overfitting問題。
-        模型驗證偏差程度仍不夠低。</h4>
+        可再進一步依不同產業分析，建立似供應鏈的結構模型。</h2>
+      <h2>Learning rate小讓loss曲線較平順的下降，但training較緩慢，loss值應該可以在下降，training時設dropout=.5降低overfitting問題。
+        模型驗證偏差程度仍不夠低。</h2>
 </ul>  
 </div>
 </body>
