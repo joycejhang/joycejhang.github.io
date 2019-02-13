@@ -29,6 +29,39 @@
   <h1>Linux Ubuntu</h1>
 <h2> nvidia-smi
   sudo apt install nvidia-utils-390</h2>
+Ubuntu安装anaconda,tensorflow等
+cd downloadS
+bash Anaconda3-2018.12-Linux-x86_64.sh
+  enter continue
+  Do you accept the license terms? [yes|no]
+  Anaconda3 will now be installed into this location:
+
+  location:
+/home/****/anaconda3
+  enter
+  Do you wish the installer to initialize Anaconda3
+in your /home/jouce/.bashrc ? [yes|no]
+yes
+ Do you wish to proceed with the installation of Microsoft VSCode? [yes|no]
+  no
+  
+  conda update -n base conda
+  
+  conda create -n tf python=3.6
+  
+  conda activate tf 或者 $ source activate tf
+conda install tensorflow keras
+  
+  $ python
+>>import keras
+  import tensorflow
+  conda install matplotlib
+  
+  conda deactivate
+  conda remove -n tf --all
+  
+https://blog.csdn.net/weixin_39954229/article/details/79961172
+  https://zhuanlan.zhihu.com/p/43348901
 </div>
 </body>
 </html>
