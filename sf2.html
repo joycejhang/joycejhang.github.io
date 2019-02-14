@@ -26,45 +26,29 @@
 <h1>WIN10</h1>
 <h2>Anaconda</h2>
 <h2>TensorFlow-GPU</h2>
-  <h1>Linux Ubuntu</h1>
-<h2> nvidia-smi
-  sudo apt install nvidia-utils-390</h2>
-Ubuntu安装anaconda,tensorflow等
-cd downloadS
-bash Anaconda3-2018.12-Linux-x86_64.sh
-  enter continue
-  Do you accept the license terms? [yes|no]
-  Anaconda3 will now be installed into this location:
-
-  location:
-/home/****/anaconda3
-  enter
-  Do you wish the installer to initialize Anaconda3
-in your /home/jouce/.bashrc ? [yes|no]
-yes
- Do you wish to proceed with the installation of Microsoft VSCode? [yes|no]
-  no
   
-  conda update -n base conda
+<h1>Linux Ubuntu 安装anaconda,tensorflow</h1>
+<h2>查顯卡nvidia-smi<br>
+    下載anaconda,至下載資料夾cd downloadS<br>
+    安裝 $ bash Anaconda3-2018.12-Linux-x86_64.sh<br>
+    enter continue<br>
+    Do you accept the license terms? [yes|no]<br>
+    Anaconda3 will now be installed into this location:/home/****/anaconda3<br>
+    Do you wish the installer to initialize Anaconda3 in your /home/jouce/.bashrc ? [yes|no]<br>
+    Do you wish to proceed with the installation of Microsoft VSCode? [yes|no]<br>
+    -> no<br>  
+    更新 $ conda update -n base conda<br>  
+    建tensorflow $ conda create -n tf python=3.6  <br>
+    $ conda activate tf <br>
+    安裝tensorflow keras $ conda install tensorflow keras<br>
   
-  conda create -n tf python=3.6
+    測試 $ python<br>
+            >>import keras<br>
+            >>import tensorflow<br>
+    安裝 $conda install matplotlib<br>
   
-  conda activate tf 或者 $ source activate tf
-conda install tensorflow keras
-  
-  $ python
->>import keras
-  import tensorflow
-  conda install matplotlib
-  
-  conda deactivate
-  conda remove -n tf --all
-  
-  conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
-  
-https://blog.csdn.net/weixin_39954229/article/details/79961172
-  https://zhuanlan.zhihu.com/p/43348901
-  https://www.pyimagesearch.com/2018/08/15/how-to-install-opencv-4-on-ubuntu/
+    conda deactivate<br>
+     conda remove -n tf --all<br>
 </div>
 </body>
 </html>
